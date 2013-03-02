@@ -67,6 +67,10 @@
 Antwoord:\\
 $ x = \frac{37}{10}, y = -\frac{5}{2}, z = -\frac{22}{5}$
 
+Correcter is:
+
+$ V = \left\{\left(\frac{37}{10}, -\frac{5}{2}, -\frac{22}{5}\right)\right\}$
+
 \subsubsection*{b)}
 \[
 \left(
@@ -90,6 +94,10 @@ $ x = \frac{37}{10}, y = -\frac{5}{2}, z = -\frac{22}{5}$
 \]
 Antwoord:\\
 Het stelsel is strijdig.
+
+Correcter:\\
+
+$V = \emptyset$
 
 \subsection*{1.4}
 $(Ax+B)(x^2-1) + C(x^2+4)(x+1) + D(x^2+4)(x-1)$\\
@@ -172,11 +180,20 @@ Voor $a=14$ zal het stelsel oneindig veel oplossingen hebben.
   0 & 0 & 0 & 0 \\
  \end{pmatrix}
 \]
-kies $t$ willekeurig, dan:\\
-$x = 6-2y+3\lambda$ en $y = 2+2\lambda$\\
-dus\\
-$x = 2-\lambda, y = 2+2\lambda, z = t$
 
+Wat we nog kunnen rijreduceren tot:
+
+\[
+\begin{pmatrix}
+  1 & 0 & 1 & 2 \\
+  0 & 1 & -2 & 2 \\
+  0 & 0 & 0 & 0 \\
+ \end{pmatrix}
+\]
+
+We constateren dat $z$ hier een vrije variabele is en wijzen haar de waarde $\lambda$ toe. Dan is onze oplossingsverzameling de volgende:
+
+$ V = \left\{ \left( 2 - \lambda, 2 + 2\lambda, \lambda \right) | \lambda \in \mathbb{R} \right\} $
 \subsubsection*{b)}
 \[
  \left(
