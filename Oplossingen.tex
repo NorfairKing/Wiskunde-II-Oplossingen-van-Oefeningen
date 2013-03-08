@@ -2163,6 +2163,32 @@ P^{-1} =
 \]
 Diagonaliseerbaar.
 
+\subsubsection*{c)}
+Niet diagonaliseerbaar.
+
+\subsubsection*{e)}
+\[
+\begin{vmatrix}
+-\lambda & 1 & 0\\
+0 & - \lambda & 1 \\
+1 & 0 & -\lambda
+\end{vmatrix}
+=0
+\;\;\;\longrightarrow\;\;\;
+(-\lambda)^3 + 1 = 0
+\;\;\;\longrightarrow\;\;\;
+\lambda = 1 \;\vee\; \lambda = -\frac{1}{2}-\frac{\sqrt{3}}{2}i \;\vee\; \lambda = -\frac{1}{2}+\frac{\sqrt{3}}{2}i
+\]
+\[
+D = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & -\frac{1}{2}-\frac{\sqrt{3}}{2}i & 0\\
+0 & 0 & -\frac{1}{2}+\frac{\sqrt{3}}{2}i
+\end{pmatrix}
+\]
+TODO
+
 \subsubsection*{e)}
 Zie toledo\\
 \url{https://cygnus.cc.kuleuven.be/bbcswebdav/pid-11087333-dt-content-rid-10466789_2/courses/a-G0O17a-1213/Oefening%205_7_e.pdf}
@@ -2227,5 +2253,123 @@ c
 1\\1
 \end{pmatrix}
 \]
+
+\subsubsection*{b)}
+\[
+\begin{vmatrix}
+-\lambda & -i & 0\\
+i & - \lambda & -i \\
+0 & i & -\lambda
+\end{vmatrix}
+=0
+\;\;\;\longrightarrow\;\;\;
+-\lambda((-\lambda)^2 + i^2)-i(i\lambda)
+\;\;\;\longrightarrow\;\;\;
+\lambda = 0 \;\vee\; \lambda = \sqrt{2} \;\vee\; \lambda = -\sqrt{2}
+\]
+\[
+D = 
+\begin{pmatrix}
+0 & 0 & 0\\
+0 & \sqrt{2} & 0\\
+0 & 0 & -\sqrt{2}
+\end{pmatrix}
+\]
+Voor $\lambda = 0$: 
+\[
+\left(
+\begin{array}{ccc|c}
+0 & -i & 0 & 0\\
+i & 0 & -i & 0\\
+0 & i & 0 & 0\\
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{ccc|c}
+0 & 0 & 0 & 0\\
+1 & 0 & -1 & 0\\
+0 & 1 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+1\\0\\1
+\end{pmatrix}
+\]
+Voor $\lambda = \sqrt{2}$: 
+\[
+\left(
+\begin{array}{ccc|c}
+-\sqrt{2} & -i & 0 & 0\\
+i & -\sqrt{2} & -i & 0\\
+0 & i & -\sqrt{2} & 0\\
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+TODO
+\]
+Voor $\lambda = -\sqrt{2}$: 
+\[
+\left(
+\begin{array}{ccc|c}
+\sqrt{2} & -i & 0 & 0\\
+i & \sqrt{2} & -i & 0\\
+0 & i & \sqrt{2} & 0\\
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+TODO
+\]
+
+\subsubsection*{c)}
+\[
+\begin{vmatrix}
+2-\lambda & i\\
+i & 2- \lambda \\
+\end{vmatrix}
+=0
+\;\;\;\longrightarrow\;\;\;
+(2-\lambda)(1-\lambda)+1=0
+\;\;\;\longrightarrow\;\;\;
+\lambda = \frac{3+i\sqrt{3}}{2} \;\vee\; \lambda = \frac{3-i\sqrt{3}}{2}
+\]
+\[
+D = 
+\begin{pmatrix}
+\frac{3+i\sqrt{3}}{2} & 0\\
+0 & \frac{3-i\sqrt{3}}{2}\\
+\end{pmatrix}
+\]
+Voor $\lambda = \frac{3+i\sqrt{3}}{2}$: 
+\[
+\left(
+\begin{array}{cc|c}
+2-\frac{3+i\sqrt{3}}{2} & i & 0 \\
+i & 1-\frac{3+i\sqrt{3}}{2} & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+TODO
+\]
+Voor $\lambda = \frac{3-i\sqrt{3}}{2}$: 
+\[
+\left(
+\begin{array}{cc|c}
+2-\frac{3-i\sqrt{3}}{2} & i & 0 \\
+i & 1-\frac{3-i\sqrt{3}}{2} & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+TODO
+\]
+
+\subsection*{5.11}
+TODO
+
+\subsection*{5.13}
+TODO
 
 \end{document}
