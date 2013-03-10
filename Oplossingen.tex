@@ -2370,6 +2370,384 @@ TODO
 TODO
 
 \subsection*{5.13}
+1. Basisstap
+Het geldt voor $k=1$ want (gegeven)
+\[
+A^k = XD^kX^{-1}
+\]
+2. Inductiestap: tel dat het klopt voor $k=n$ met $n>1$ en $n \in \mathrm{N}$
+3. Te bewijzen: 
+\[
+A^{k+1} = X.D^{k+1}.X^{-1}
+\]
+\[
+A.A^k = X.D.D^k.X^{-1}
+\]
+\[
+A.A^k = X.D.X^{-1}\;.\;XD^kX^{-1} = X.D.D^k.X^{-1}
+\]
+QED
+
+\subsection*{5.15}
 TODO
+
+\section*{Hoofdstuk 6}
+\subsection*{6.1}
+\[
+\frac{d\begin{pmatrix}
+e^{2t}\\2e^{2t}
+\end{pmatrix}}{dt}
+=
+\begin{pmatrix}
+2e^{2t}\\4e^{2t}
+\end{pmatrix}
+\;\;\;
+\frac{d\begin{pmatrix}
+e^{3t}\\e^{3t}
+\end{pmatrix}}{dt}
+=
+\begin{pmatrix}
+3e^{3t}\\3e^{3t}
+\end{pmatrix}
+\]
+\[
+\begin{pmatrix}
+4 & -1 \\
+2 & 1
+\end{pmatrix}
+.
+\begin{pmatrix}
+e^{2t}\\2e^{2t}
+\end{pmatrix}
+=
+\begin{pmatrix}
+2e^{2t}\\4e^{2t}
+\end{pmatrix}
+\]
+OK
+\[
+\begin{pmatrix}
+4 & -1 \\
+2 & 1
+\end{pmatrix}
+.
+\begin{pmatrix}
+e^{3t}\\e^{3t}
+\end{pmatrix}
+=
+\begin{pmatrix}
+3e^{3t}\\3e^{3t}
+\end{pmatrix}
+\]
+OK
+
+\[
+\begin{vmatrix}
+4-\lambda & -1 \\
+2 & 1-\lambda
+\end{vmatrix}
+=0
+\;\;\;\longrightarrow\;\;\;
+(4-\lambda)(1-\lambda)+2=0
+\;\;\;\longrightarrow\;\;\;
+\lambda = 2 \;\;\;\vee\;\;\;\lambda = 3
+\]
+Voor $\lambda = 2$: 
+\[
+\left(
+\begin{array}{cc|c}
+2 & -1 & 0 \\
+2 & -1 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+2 & -1 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+1\\2
+\end{pmatrix}
+\]
+Voor $\lambda = 3$: 
+\[
+\left(
+\begin{array}{cc|c}
+1 & -1 & 0 \\
+2 & -2 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+1 & -1 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+\]
+\[
+\vec{x} = c_1e^{2t}\begin{pmatrix}
+1\\2
+\end{pmatrix}+c_2e^{3t}\begin{pmatrix}
+1\\1
+\end{pmatrix}
+\]
+
+\subsection*{6.2}
+\subsubsection*{a)}
+\[
+\vec{x'} = 
+\begin{pmatrix}
+5 & 4\\
+-1 & 0
+\end{pmatrix}
+\vec{x}
+\]
+\[
+\begin{vmatrix}
+5-\lambda & 4 \\
+-1 & -\lambda
+\end{vmatrix}
+=0
+\;\;\;\longrightarrow\;\;\;
+(5-\lambda)(-\lambda)+4=0
+\;\;\;\longrightarrow\;\;\;
+\lambda = 4 \;\;\;\vee\;\;\;\lambda = 1
+\]
+Voor $\lambda = 4$: 
+\[
+\left(
+\begin{array}{cc|c}
+1 & 4 & 0 \\
+-1 & -4 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+1 & 4 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+-4\\1
+\end{pmatrix}
+\]
+Voor $\lambda = 1$: 
+\[
+\left(
+\begin{array}{cc|c}
+4 & 4 & 0 \\
+-1 & -1 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+1 & 1 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+-1\\1
+\end{pmatrix}
+\]
+\[
+\vec{x} = c_1e^{4t}\begin{pmatrix}
+-4\\1
+\end{pmatrix}+c_2e^{t}\begin{pmatrix}
+-1\\1
+\end{pmatrix}
+\]
+Evenwichten:
+\[
+5x+y4=0 \;\;\;en\;\;\; -x=0
+\]
+\[
+x=0 \;\;\;en\;\;\; y=0
+\]
+De oorsprong is een evenwicht.\\
+Stabiliteit:
+\[
+\lambda_1 \ge 0 \;\;\;of\;\;\; \lambda_2 \ge 0
+\]
+De oorsprong is een onstabiel evenwicht.
+
+\subsection*{6.3}
+\subsubsection*{a)}
+\[
+\vec{x'} = 
+\begin{pmatrix}
+4 & 2\\
+3 & 3
+\end{pmatrix}
+\vec{x}
+\]
+\[
+\begin{vmatrix}
+4-\lambda & 2 \\
+3 & 3-\lambda
+\end{vmatrix}
+=0
+\;\;\;\longrightarrow\;\;\;
+(4-\lambda)(3-\lambda)-6=0
+\;\;\;\longrightarrow\;\;\;
+\lambda = 6 \;\;\;\vee\;\;\;\lambda = 1
+\]
+Voor $\lambda = 6$: 
+\[
+\left(
+\begin{array}{cc|c}
+-2 & 2 & 0 \\
+3 & -3 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+-1 & 1 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+\]
+Voor $\lambda = 1$: 
+\[
+\left(
+\begin{array}{cc|c}
+3 & 2 & 0 \\
+3 & 2 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+3 & 2 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+2\\-3
+\end{pmatrix}
+\]
+\[
+\vec{x} = c_1e^{6t}\begin{pmatrix}
+1\\1
+\end{pmatrix}+c_2e^{t}\begin{pmatrix}
+2-3
+\end{pmatrix}
+\]
+
+\subsection*{6.8}
+\subsubsection*{a)}
+\[
+\vec{x'} = 
+\begin{pmatrix}
+-2 & 4\\
+1 & -4
+\end{pmatrix}
+\vec{x}
+\]
+\[
+\begin{vmatrix}
+-2-\lambda & 4 \\
+1 & -4-\lambda
+\end{vmatrix}
+=0
+\;\;\;\longrightarrow\;\;\;
+(-2-\lambda)(-4-\lambda)-4=0
+\;\;\;\longrightarrow\;\;\;
+\lambda = \frac{-6+\sqrt{20}}{2} \;\;\;\vee\;\;\;\lambda = \frac{-6-\sqrt{20}}{2}
+\]
+Evenwichten:
+\[
+-2x+4y=0 \;\;\;en\;\;\; -4y+x=0
+\]
+\[
+x=0 \;\;\;en\;\;\; y=0
+\]
+Stabiliteit:
+\[
+\lambda_1 < 0 \;\;\;en\;\;\; \lambda_2 < 0
+\]
+De oorsprong is een stabiel evenwicht.
+
+\subsection*{6.10}
+\subsubsection*{a)}
+Evenwichten:
+\[
+x+xy=0 \;\;\;en\;\;\; 2y-xy=0
+\]
+\[
+x=0 \;\;\;en\;\;\; y=0
+\;\;\;\;of\;\;\;\;
+x=2 \;\;\;en\;\;\; y=-1
+\]
+A:
+\[
+A=
+\begin{pmatrix}
+1+y & x \\
+-y & 2-x
+\end{pmatrix}[
+\]
+voor $(0,0)$:
+\[
+\begin{pmatrix}
+1 & 0 \\
+0 & 2
+\end{pmatrix}
+\]
+\[
+\lambda_1 = 1
+\;\;\;en\;\;\;
+\lambda_2 = 2
+\]
+\[
+\lambda_1 \ge 0 \;\;\;of\;\;\; \lambda_2 \ge 0
+\]
+$(0,0)$ is een onstabiel evenwicht.\\
+voor $(-1,2)$:
+\[
+\begin{pmatrix}
+3 & -1 \\
+-2 & 3
+\end{pmatrix}
+\]
+\[
+\lambda_1 = 7
+\;\;\;en\;\;\;
+\lambda_2 = -1
+\]
+\[
+\lambda_1 \ge 0 \;\;\;of\;\;\; \lambda_2 \ge 0
+\]
+$(-1,2)$ is een onstabiel evenwicht.
+
 
 \end{document}
