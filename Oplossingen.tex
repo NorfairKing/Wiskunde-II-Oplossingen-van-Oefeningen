@@ -1875,10 +1875,9 @@ c
 \]
 
 \subsubsection*{g)}
-\subsubsection*{e)}
 \[
 \begin{vmatrix}
-1\lambda & 3 & 0 \\
+-\lambda & 3 & 0 \\
 3 & -\lambda & 3 \\
 0 & 3 & -\lambda
 \end{vmatrix}
@@ -2239,10 +2238,9 @@ Voor $\lambda = -2$:
 \end{array}
 \right)
 \;\;\;\longrightarrow\;\;\;
-TODO
 \left(
 \begin{array}{cc|c}
-1 & -1 & 0 \\
+3+i & 2+i & 0 \\
 0 & 0 & 0
 \end{array}
 \right)
@@ -2250,7 +2248,7 @@ TODO
 eigenvector:\;
 c
 \begin{pmatrix}
-1\\1
+\frac{-i-7}{10}\\1
 \end{pmatrix}
 \]
 
@@ -2367,7 +2365,17 @@ TODO
 \]
 
 \subsection*{5.11}
-TODO
+\subsubsection*{a)}
+\[
+\begin{vmatrix}
+\alpha-\beta & \beta & \beta \\
+\beta & \alpha-\beta & \beta \\
+\beta & \beta & \alpha-\beta
+\end{vmatrix}
+=0
+\longrightarrow
+(-\lambda-\alpha-2\beta)(\lambda-\alpha+\beta)^2 = 0
+\]
 
 \subsection*{5.13}
 1. Basisstap
@@ -2590,6 +2598,90 @@ Stabiliteit:
 \]
 De oorsprong is een onstabiel evenwicht.
 
+\subsubsection*{c)}
+\[
+\vec{x'} = \begin{pmatrix}
+4 & -2\\
+5 & -2
+\end{pmatrix}\vec{x}
+\]
+\[
+\begin{vmatrix}
+4-\lambda & -2\\
+5 & -2-\lambda
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda = 1 \pm i
+\]
+voor $\lambda=1+i$:
+\[
+\left(
+\begin{array}{cc|c}
+3-i & -2 & 0 \\
+5 & -3-i & 0
+\end{array}
+\right)
+\longrightarrow
+c
+\begin{pmatrix}
+2 \\ 3+i
+\end{pmatrix}
+\]
+voor $\lambda=1ii$:
+\[
+\left(
+\begin{array}{cc|c}
+3+i & -2 & 0 \\
+5 & -3+i & 0
+\end{array}
+\right)
+\longrightarrow
+c
+\begin{pmatrix}
+2 \\ 3-i
+\end{pmatrix}
+\]
+\[
+x(t)=
+c_1e^t(cos(t)+isin(t))
+\begin{pmatrix}
+2 \\ 3+i
+\end{pmatrix}
++
+c_2e^t(cos(-t)+isin(-t))
+\begin{pmatrix}
+2 \\ 3-i
+\end{pmatrix}
+\]
+\[
+\begin{pmatrix}
+1\\2
+\end{pmatrix}
+=
+c_1
+e^{(1-i)t}
+\begin{pmatrix}
+2\\3+i
+\end{pmatrix}
++
+c_2
+e^{(1+i)t}
+\begin{pmatrix}
+2\\3-i
+\end{pmatrix}
+\longrightarrow
+c_1 = \frac{1}{2}
+\;\;\;en\;\;\;
+c_2 = \frac{1}{2}
+\]
+\[
+\vec{x'} = e^t\begin{pmatrix}
+cos(t)-sin(t)\\2cos(t)-sin(t)
+\end{pmatrix}
+\]
+
+
 \subsection*{6.3}
 \subsubsection*{a)}
 \[
@@ -2663,6 +2755,301 @@ c
 \end{pmatrix}
 \]
 
+\subsubsection*{c)}
+\[
+\vec{x'}
+= 
+\begin{pmatrix}
+6 & -8\\
+4 é -6
+\end{pmatrix}
+\vec{x}
+\]
+\[
+\begin{vmatrix}
+6-\lambda & -8\\
+4 & -6-\lambda
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda= \pm 2
+\]
+voor $\lambda=2$:
+\[
+\left(
+\begin{array}{cc|c}
+4 & -8 & 0 \\
+4 & -8 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+1 & -2 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+c
+\begin{pmatrix}
+2\\1
+\end{pmatrix}
+\]
+voor $\lambda=-2$:
+\[
+\left(
+\begin{array}{cc|c}
+8 & -8 & 0 \\
+4 & -4 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+1 & -1 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+c
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+\]
+\[
+\begin{pmatrix}
+1\\2
+\end{pmatrix}
+=
+c_1
+\begin{pmatrix}
+2\\1
+\end{pmatrix}
++
+c_2
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+\;\;\;\longrightarrow\;\;\;
+c_1 = 1
+\;\;\;en\;\;\;
+c_2 = -2
+\]
+\[
+\vec{x}=
+e^{2t}
+\begin{pmatrix}
+2\\1
+\end{pmatrix}
++
+2e^{-2t}
+\begin{pmatrix}
+1\\1
+\end{pmatrix}
+\]
+
+\subsection*{6.5}
+\subsubsection*{a)}
+\[
+-k_1a+k_2b+k_1a-(k_2+k_3)b+k_3b=0
+\]
+OK
+\subsubsection*{b)}
+\[
+\vec{x'}=
+\begin{pmatrix}
+-2 & 1 & 0\\
+2 & -3 & 0\\
+0 & 2 & 0
+\end{pmatrix}
+\vec{x}
+\]
+\[
+\begin{vmatrix}
+-2-\lambda & 1 & 0\\
+2 & -3-\lambda & 0\\
+0 & 2 & -\lambda
+\end{vmatrix}
+\longrightarrow
+\lambda=0 \vee \lambda=-1 \vee \lambda=-4
+\]
+voor $\lambda=0$:
+\[
+c
+\begin{pmatrix}
+1\\1\\-2
+\end{pmatrix}
+\]
+voor $\lambda=-1$:
+\[
+c
+\begin{pmatrix}
+2\\-1\\-1
+\end{pmatrix}
+\]
+voor $\lambda=-4$:
+\[
+c
+\begin{pmatrix}
+-1\\2\\-1
+\end{pmatrix}
+\]
+
+\subsection*{6.6}
+\[
+\left\lbrace
+\begin{array}{c c}
+x' = 2x+y\\
+y' = 3x+4y\\
+z' = 5x-6y+32
+\end{array}
+\right.
+\]
+\[
+p(\lambda) =
+\begin{vmatrix}
+2-\lambda & 1 & 0\\
+3 & 4-\lambda & 0\\
+5 & -6 & 3-\lambda
+\end{vmatrix}=0
+\longrightarrow
+\lambda=1 \vee \lambda=3 \vee \lambda=5
+\]
+voor $\lambda=1$:
+\[
+c
+\begin{pmatrix}
+-2 \\ 2 \\ 11
+\end{pmatrix}
+\]
+voor $\lambda=3$:
+\[
+c
+\begin{pmatrix}
+0 \\ 0 \\ 1
+\end{pmatrix}
+\]
+voor $\lambda=5$:
+\[
+c
+\begin{pmatrix}
+2 \\ 6 \\ -13
+\end{pmatrix}
+\]
+\[
+\begin{pmatrix}
+5 \\ 4 \\ 3
+\end{pmatrix}
+=
+c_1
+\begin{pmatrix}
+-2 \\ 2 \\ 11
+\end{pmatrix}
++
+c_2
+\begin{pmatrix}
+0 \\ 0 \\ 1
+\end{pmatrix}
++
+c_3
+\begin{pmatrix}
+2 \\ 6 \\ -13
+\end{pmatrix}
+\]
+\[
+c_1 = -\frac{3}{2}
+\wedge
+c_2 = \frac{67}{2}
+\wedge
+c_3 = 1
+\]
+\[
+\vec{x}
+=
+\frac{67}{2}e^{3t}
+\begin{pmatrix}
+0 \\ 0 \\ 1
+\end{pmatrix}
++ e^{5t}
+\begin{pmatrix}
+2 \\ 6 \\ -13
+\end{pmatrix}
+-\frac{3}{2}e^t
+\begin{pmatrix}
+-2 \\ 2 \\ 11
+\end{pmatrix}
+\]
+
+\subsection*{6.7}
+\subsubsection*{a)}
+\[
+x'=y 
+\;\;\;en\;\;\;
+y'=-3y-2x
+\]
+\[
+\begin{vmatrix}
+-\lambda & 1\\
+-2 & -3-\lambda
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda = -1 \vee \lambda = -2
+\]
+voor $\lambda=-1$:
+\[
+\left(
+\begin{array}{cc|c}
+1 & 1 & 0\\
+-2 & -2 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+1 & 1 & 0\\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+c
+\begin{pmatrix}
+-1 & 1
+\end{pmatrix}
+\]
+voor $\lambda=-2$:
+\[
+\left(
+\begin{array}{cc|c}
+2 & 1 & 0\\
+-2 & 1 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+2 & 1 & 0\\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+c
+\begin{pmatrix}
+-1 & 2
+\end{pmatrix}
+\]
+\[
+\vec{x}=
+c_1e^{-t}
+\begin{pmatrix}
+-1\\1
+\end{pmatrix}
++ c_2e^{-2t}
+\begin{pmatrix}
+-1\\2
+\end{pmatrix}
+\]
+
 \subsection*{6.8}
 \subsubsection*{a)}
 \[
@@ -2696,6 +3083,196 @@ Stabiliteit:
 \lambda_1 < 0 \;\;\;en\;\;\; \lambda_2 < 0
 \]
 De oorsprong is een stabiel evenwicht.
+
+\subsubsection*{b)}
+\[
+\begin{vmatrix}
+2-\lambda & 4\\
+1 & -4-\lambda
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda = \frac{-2 \pm \sqrt{52}}{2}
+\longrightarrow
+instabiel
+\]
+
+\subsubsection*{c)}
+\[
+\begin{vmatrix}
+-\lambda & 1\\
+-2 & -\lambda
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda = \pm i\sqrt{2}
+\longrightarrow
+geen\;uitspraak\;mogelijk
+\]
+
+\subsection*{6.9}
+\subsubsection*{a)}
+\[
+\vec{F}=m.\vec{a}
+\]
+\[
+\begin{pmatrix}
+36x\\12x+16y
+\end{pmatrix}
+=
+4
+\begin{pmatrix}
+x''\\y''
+\end{pmatrix}
+\longrightarrow
+\left\lbrace
+\begin{array}{c c}
+x''=9\\y''=3x+4y
+\end{array}
+\right.
+\]
+
+\subsubsection*{b)}
+\[
+\left\lbrace
+\begin{array}{c c}
+x''=9\\
+y''=3x+4y\\
+x' = a\\
+y' = b
+\end{array}
+\right.
+\longrightarrow
+\left\lbrace
+\begin{array}{c c}
+a=x'\\
+b=y'\\
+a' = 9x\\
+b' = 3x+4y
+\end{array}
+\right.
+\longrightarrow
+A=
+\begin{pmatrix}
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+9 & 0 & 0 & 0\\
+3 & 4 & 0 & 0\\
+\end{pmatrix}
+\]
+
+\subsubsection*{c)}
+\[
+\begin{vmatrix}
+-\lambda & 0 & 1 & 0\\
+0 & -\lambda & 0 & 1\\
+9 & 0 & -\lambda & 0\\
+3 & 4 & 0 & -\lambda\\
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda = \pm 2 \vee \lambda = \pm 3
+\]
+voor $\lambda=3$:
+\[
+\left(
+\begin{array}{cccc|c}
+-3 & 0 & 1 & 0 & 0\\
+0 & -3 & 0 & 1 & 0\\
+9 & 0 & -3 & 0 & 0\\
+3 & 4 & 0 & -3 & 0
+\end{array}
+\right)
+\longrightarrow
+\left(
+\begin{array}{cccc|c}
+1 & 0 & 0 & -\frac{5}{9} & 0\\
+0 & 1 & 0 & -\frac{1}{3} & 0\\
+0 & 0 & 1 & -\frac{5}{3} & 0\\
+0 & 0 & 0 & 0 & 0
+\end{array}
+\right)
+\longrightarrow
+c
+\begin{pmatrix}
+5\\3\\15\\9
+\end{pmatrix}
+\]
+voor $\lambda=-3$:
+\[
+\left(
+\begin{array}{cccc|c}
+3 & 0 & 1 & 0 & 0\\
+0 & 3 & 0 & 1 & 0\\
+9 & 0 & 3 & 0 & 0\\
+3 & 4 & 0 & 3 & 0
+\end{array}
+\right)
+\longrightarrow
+\left(
+\begin{array}{cccc|c}
+1 & 0 & 0 & \frac{5}{9} & 0\\
+0 & 1 & 0 & \frac{1}{3} & 0\\
+0 & 0 & 1 & -\frac{5}{3} & 0\\
+0 & 0 & 0 & 0 & 0
+\end{array}
+\right)
+\longrightarrow
+c
+\begin{pmatrix}
+-5\\-3\\15\\9
+\end{pmatrix}
+\]
+voor $\lambda=2$:
+\[
+\left(
+\begin{array}{cccc|c}
+-2 & 0 & 1 & 0 & 0\\
+0 & -2 & 0 & 1 & 0\\
+9 & 0 & -2 & 0 & 0\\
+3 & 4 & 0 & -2 & 0
+\end{array}
+\right)
+\longrightarrow
+\left(
+\begin{array}{cccc|c}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & -\frac{1}{2} & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 0
+\end{array}
+\right)
+\longrightarrow
+c
+\begin{pmatrix}
+0\\1\\0\\2
+\end{pmatrix}
+\]
+voor $\lambda=-2$:
+\[
+\left(
+\begin{array}{cccc|c}
+2 & 0 & 1 & 0 & 0\\
+0 & 2 & 0 & 1 & 0\\
+9 & 0 & 2 & 0 & 0\\
+3 & 4 & 0 & 2 & 0
+\end{array}
+\right)
+\longrightarrow
+\left(
+\begin{array}{cccc|c}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & \frac{1}{2} & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 0 & 0
+\end{array}
+\right)
+\longrightarrow
+c
+\begin{pmatrix}
+0\\-1\\0\\2
+\end{pmatrix}
+\]
 
 \subsection*{6.10}
 \subsubsection*{a)}
@@ -2749,5 +3326,183 @@ voor $(-1,2)$:
 \]
 $(-1,2)$ is een onstabiel evenwicht.
 
+\subsubsection*{c)}
+\[
+\left\lbrace
+\begin{array}{c c}
+x' = x-2xy+xy^2 = 0\\
+y' = y+xy = 0
+\end{array}
+\right.
+\]
+evenwichten: $(0,0)$ en $(-1,1)$:
+\[
+A =
+\begin{pmatrix}
+1-2y+y^2 & -2x+2xy\\
+y & 1+x
+\end{pmatrix}
+\]
+voor $(0,0)$:
+\[
+\begin{pmatrix}
+1 & 0 \\
+0 & 1 
+\end{pmatrix}
+\longrightarrow
+\lambda=1
+\longrightarrow
+instabiel
+\]
+voor $(-1,1)$:
+\[
+\begin{pmatrix}
+0 & 0 \\
+1 & 0
+\end{pmatrix}
+\longrightarrow
+geen\;\lambda
+\longrightarrow
+geen\;uitspraak
+\]
+
+\subsection*{6.11}
+\subsubsection*{a)}
+Lotka Voltura roofdier/prooidier model
+\[
+x'=x(a-bx+cy)
+\;\;\; en \;\;\;
+y'=y(-k+lx)
+\]
+hier:
+$a=1$ $b=\frac{1}{4}$ $c=\frac{1}{4}$ $k=1$ $p=1$.
+x is roofdier, y is prooidier.
+
+\subsubsection*{b)}
+\[
+-x+pxy=0 
+\;\;\; en \;\;\;
+y-\frac{1}{4}y^2-\frac{1}{4} = 0
+\]
+\[
+\longrightarrow (0,0)\;(0,4)\;(\frac{1-4p}{p},\frac{1}{p})
+\]
+
+\subsubsection*{c)}
+\[
+A=
+\begin{pmatrix}
+-1+py & px\\
+\frac{y}{4} & 1-\frac{y}{2}-\frac{x}{4}
+\end{pmatrix}
+\]
+voor $(0,0)$:
+\[
+\begin{vmatrix}
+p-1-\lambda & 0 \\
+0 & 1-\lambda
+\end{vmatrix}
+=0
+\longrightarrow \lambda=1 \vee \lambda=p-1
+\;\;\; instabiel
+\]
+voor $(0,4)$:
+\[
+\begin{vmatrix}
+4p-1-\lambda & 0\\
+4 & -1-\lambda
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda = \frac{-4p-2 \pm \sqrt{16p^2+8p}}{2}
+\;\;\; stabiel\;als\;p<\frac{1}{4}
+\]
+voor $(\frac{1-4p}{p},\frac{1}{p})$
+\[
+\begin{vmatrix}
+0 & 1-4p\\
+\frac{1}{4p^2} & 1-\frac{1}{2p}-\frac{1-4p}{4p}
+\end{vmatrix}
+=0
+\longrightarrow
+\lambda = \frac{-\frac{3}{4p} \pm \sqrt{\frac{9-64p}{16p^2}}}{2}
+\;\;\; stabiel\;als\;p>\frac{1}{4}
+\]
+
+\subsection*{13}
+\subsubsection*{a)}
+\[
+\left\lbrace
+\begin{array}{c c}
+x' = x(a-bx-cy)\\
+y' = y(p-qx-ry)
+\end{array}
+\right.
+\]
+evenwichten: 
+\[
+(0,0) (0,\frac{p}{r}) (\frac{a}{b},0) (\frac{cp-ar}{qc-rb},\frac{qa-pb}{qc-rb})
+\]
+
+\subsubsection*{b)}
+invullen:
+\[
+(0,0) (0,2) (2,0) (\frac{2}{3},\frac{2}{3})
+\]
+\[
+A = 
+\begin{pmatrix}
+a-2xb-cy & -cx\\
+-qy & p-qxy-2r
+\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}
+-2x-2y+2 & -2x\\
+-2y & -2x-2y+2
+\end{pmatrix}
+\]
+
+voor $(0,0)$:
+\[
+\begin{pmatrix}
+2-\lambda & 0 \\
+0 & 2-\lambda
+\end{pmatrix}
+\longrightarrow
+instabiel
+\]
+voor $(0,2)$:
+\[
+\begin{pmatrix}
+-2-\lambda & 0 \\
+-4 & -2-\lambda
+\end{pmatrix}
+\longrightarrow
+\lambda = -\frac{1}{2}
+\longrightarrow
+stabiel
+\]
+voor $(2,0)$:
+\[
+\begin{pmatrix}
+-2-\lambda & -4 \\
+0 & -2-\lambda
+\end{pmatrix}
+\longrightarrow
+\lambda = -\frac{1}{2}
+\longrightarrow
+stabiel
+\]
+voor $(\frac{2}{3},\frac{2}{3})$:
+\[
+\begin{pmatrix}
+-\frac{8	}{3}+2 & -\frac{4}{3}\\
+-\frac{4}{3} & -\frac{8}{3}+2
+\end{pmatrix}
+\longrightarrow
+\lambda = \frac{2}{3} \vee \lambda=-2
+\longrightarrow
+instabiel
+\]
 
 \end{document}
