@@ -3059,6 +3059,10 @@ c
 \]
 
 \subsection*{6.2}
+Stabiliteit:
+\[
+\lambda_1 \ge 0 \;\;\;of\;\;\; \lambda_2 \ge 0
+\]
 \subsubsection*{a)}
 \[
 \vec{x'} = 
@@ -3132,17 +3136,90 @@ c
 \]
 Evenwichten:
 \[
-5x+y4=0 \;\;\;en\;\;\; -x=0
+5x+4y=0 \;\;\;en\;\;\; -x=0
 \]
 \[
 x=0 \;\;\;en\;\;\; y=0
 \]
-De oorsprong is een evenwicht.\\
-Stabiliteit:
-\[
-\lambda_1 \ge 0 \;\;\;of\;\;\; \lambda_2 \ge 0
-\]
 De oorsprong is een onstabiel evenwicht.
+
+\subsubsection*{b)}
+\[
+\vec{x}' =
+\begin{pmatrix}
+1 & 1\\
+4 & 1\\
+\end{pmatrix} 
+\vec{x}
+\]
+\[
+\begin{vmatrix}
+1-\lambda & 1\\
+4 & 1-\lambda
+\end{vmatrix}
+= 0
+\longrightarrow
+\lambda = -1 \;\;\;\vee\;\;\; \lambda =3
+\]
+Voor $\lambda = -1$: 
+\[
+\left(
+\begin{array}{cc|c}
+2 & 1 & 0 \\
+4 & 2 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+2 & 1 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+1\\-2
+\end{pmatrix}
+\]
+Voor $\lambda = 3$: 
+\[
+\left(
+\begin{array}{cc|c}
+-2 & 1 & 0 \\
+4 & -2 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+\left(
+\begin{array}{cc|c}
+-2 & 1 & 0 \\
+0 & 0 & 0
+\end{array}
+\right)
+\;\;\;\longrightarrow\;\;\;
+eigenvector:\;
+c
+\begin{pmatrix}
+1\\2
+\end{pmatrix}
+\]
+\[
+\vec{x} = c_1e^{-t}\begin{pmatrix}
+1\\-2
+\end{pmatrix}+c_2e^{3t}\begin{pmatrix}
+1\\2
+\end{pmatrix}
+\]
+Evenwichten:\\
+\[
+x+y=0 \;\;\;en\;\;\; x+y=0
+\]
+\[
+x=0 \;\;\;en\;\;\; y=0
+\]
+De oorsprong is een onstabie evenwicht.
 
 \subsubsection*{c)}
 \[
