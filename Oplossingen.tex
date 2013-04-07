@@ -91,6 +91,28 @@ $ V = \left\{\left(\frac{37}{10}, -\frac{5}{2}, -\frac{22}{5}\right)\right\}$
 Antwoord:\\
 $V = \emptyset$
 
+\subsection*{1.2}
+\subsubsection*{a)}
+\[
+\left(
+\begin{array}{ccc|c}
+2 & -1 & 1 & 2 \\
+3 & 1 & -2 & 1 \\
+1 & -3 & 4 & k
+\end{array}
+\right)
+\rightarrow
+\left(
+\begin{array}{ccc|c}
+1 & 0 & -\frac{1}{5} & \frac{3}{5} \\
+0 & 1 & -\frac{7}{5} & -\frac{4}{5} \\
+0 & 0 & 0 & 0
+\end{array}
+\right)
+\]
+Antwoord:\\
+$V = \left\lbrace (\frac{3}{5} + \frac{1}{5}\lambda, -\frac{4}{5} + \frac{7}{5}\lambda, \lambda)|\lambda \in \mathbb{R} \right\rbrace$
+
 \subsection*{1.4}
 $(Ax+B)(x^2-1) + C(x^2+4)(x+1) + D(x^2+4)(x-1)$\\
 $= Ax^3-Ax+Bx^2-B+cx^3+cx^2+4Cx+4C+Dx^3-Dx^2+4Dx-4D$
@@ -130,6 +152,39 @@ Antwoord:\\
 	C= \frac{1}{10}\\
 	D=-\frac{1}{10}
   \end{array} \right.
+\]
+
+\subsection*{1.5}
+\[
+\frac{1}{x(x^2-b^2} = \frac{A}{x} + \frac{B}{x+b} + \frac{C}{x-b}
+\]
+\[
+\Leftrightarrow
+\frac{Ax^2-Ab^2+Bx^2+Bxb+Cx^2-Cxb}{x(x^2-b^2)}
+\]
+\[
+\Leftrightarrow
+\left\lbrace
+\begin{array}{c c}
+A+B+C=0\\
+Bb-Cb=0\\
+-Ab^2=1
+\end{array}
+\right.
+\]
+\[
+\Leftrightarrow
+\left\lbrace
+\begin{array}{c c}
+A = -\frac{1}{b^2}\\
+B = \frac{1}{2b^2}\\
+C = \frac{1}{2b^2}
+\end{array}
+\right.
+\]
+\[
+\Leftrightarrow
+\frac{1}{x(x^2-b^2} = -\frac{1}{b^2x^2} + \frac{1}{2b^2(x+b)} + \frac{1}{2b^2(x-b)}
 \]
 
 \subsection*{1.6}
@@ -344,7 +399,7 @@ Enkel als $k=1$ zullen R1 en R3 lineair afhankelijk zijn en zullen er niet-trivi
 \[
 \left(
 \begin{array}{ccc|c}
-3 & 1 & 1 & 0 \\
+3 & 1 & 1 & 0 \\b
 1 & 3 & 1 & 0 \\
 1 & 1 & 3 & 0
 \end{array}
@@ -791,6 +846,127 @@ d=7
 \right.
 \]
 
+\subsection*{2.5}
+\subsubsection*{a)}
+\[
+\begin{pmatrix}
+2 & -1 \\
+-1 & 1
+\end{pmatrix}
+.
+\begin{pmatrix}
+-1 & 3 \\
+3 & 2
+\end{pmatrix}
+-
+\begin{pmatrix}
+-1 & 3 \\
+3 & 2
+\end{pmatrix}
+.
+\begin{pmatrix}
+2 & -1 \\
+-1 & 1
+\end{pmatrix}
+\]
+\[
+=
+\begin{pmatrix}
+-5 & 4 \\
+4 & -1
+\end{pmatrix}
+-
+\begin{pmatrix}
+-5 & 4 \\
+4 & -1
+\end{pmatrix}
+=
+\begin{pmatrix}
+0 & 0 \\
+0 & 0
+\end{pmatrix}
+\]
+
+\subsubsection*{b)}
+\[
+\begin{pmatrix}
+1 & 0 \\
+1 & 0
+\end{pmatrix}
+.
+\begin{pmatrix}
+0 & 1\\
+-1 & 0
+\end{pmatrix}
+-
+\begin{pmatrix}
+0 & 1\\
+-1 & 0
+\end{pmatrix}
+.
+\begin{pmatrix}
+1 & 0 \\
+1 & 0
+\end{pmatrix}
+\]
+\[
+=
+\begin{pmatrix}
+0 & 1\\
+0 & 1
+\end{pmatrix}
+-
+\begin{pmatrix}
+1 & 0 \\
+-1 & 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1 & 1 \\
+1 & 1
+\end{pmatrix}
+\]
+
+\subsection*{2.6}
+\[
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}^2
++
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}^2
++
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}^2
+\]
+\[
+=
+\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
++
+\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
++
+\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+3 & 0 \\
+0 & 3
+\end{pmatrix}
+\]
+
 \subsection*{2.7}
 \subsubsection*{b)}
 \[
@@ -849,14 +1025,7 @@ Ja.
 \right)
 \overset{\begin{matrix}
   R2 = R2-2R1
- \end{matrix}}{\rightarrow}\left(
-\begin{array}{cccc|c}
-2 & 1 & 0 & 0 & 3\\
-3 & 2 & 0 & 0 & 2\\
-0 & 0 & 2 & 3 & 1\\
-0 & 0 & 1 & 2 & 4
-\end{array}
-\right)
+ \end{matrix}}{\rightarrow}
  \left(
 \begin{array}{cc|cc}
 2 & -3 & 1 & 0 \\
@@ -888,6 +1057,99 @@ Ja.
 \begin{pmatrix}
 \frac{1}{14} & \frac{3}{14} \\
 -\frac{2}{7} & \frac{1}{7}
+\end{pmatrix}
+\]
+
+\subsubsection*{f)}
+\[
+\left(
+\begin{array}{cccc|cccc}
+3 & 4 & 0 & 0 & 1 & 0 & 0 & 0\\
+1 & 2 & 0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 3 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 4 & 2 & 0 & 0 & 0 & 1
+\end{array}
+\right)
+\rightarrow
+\left(
+\begin{array}{cccc|cccc}
+1 & 2 & 0 & 0 & 0 & 1 & 0 & 0\\
+3 & 4 & 0 & 0 & 1 & 0 & 0 & 0\\
+0 & 0 & 3 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 4 & 2 & 0 & 0 & 0 & 1
+\end{array}
+\right)
+\overset{\begin{matrix}
+  R2 = R2-3R1
+ \end{matrix}}{\rightarrow}
+\]
+\[
+\left(
+\begin{array}{cccc|cccc}
+1 & 2 & 0 & 0 & 0 & 1 & 0 & 0\\
+0 & -2 & 0 & 0 & 1 & -3 & 0 & 0\\
+0 & 0 & 3 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 4 & 2 & 0 & 0 & 0 & 1
+\end{array}
+\right)
+\overset{\begin{matrix}
+R1 = R1+R2
+\end{matrix}}{\rightarrow}
+\left(
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & 1 & -2 & 0 & 0\\
+0 & -2 & 0 & 0 & 1 & -3 & 0 & 0\\
+0 & 0 & 3 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 4 & 2 & 0 & 0 & 0 & 1
+\end{array}
+\right)
+\overset{\begin{matrix}
+R4=R4-\frac{4}{3}R3
+\end{matrix}}{\rightarrow}
+\]
+\[
+\left(
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & 1 & -2 & 0 & 0\\
+0 & -2 & 0 & 0 & 1 & -3 & 0 & 0\\
+0 & 0 & 3 & 1 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & \frac{2}{3} & 0 & 0 & -\frac{4}{3} & 1
+\end{array}
+\right)
+\overset{\begin{matrix}
+R3=R3-\frac{3}{2}R4
+\end{matrix}}{\rightarrow}
+\left(
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & 1 & -2 & 0 & 0\\
+0 & -2 & 0 & 0 & 1 & -3 & 0 & 0\\
+0 & 0 & 3 & 0 & 0 & 0 & 3 & -\frac{3}{2}\\
+0 & 0 & 0 & \frac{2}{3} & 0 & 0 & -\frac{4}{3} & 1
+\end{array}
+\right)
+\overset{\begin{matrix}
+R2 = -\frac{1}{2}R2\\
+R3 = \frac{1}{3}R3\\
+R4 = \frac{3}{2}R4
+\end{matrix}}{\rightarrow}
+\]
+\[
+\left(
+\begin{array}{cccc|cccc}
+1 & 0 & 0 & 0 & 1 & -2 & 0 & 0\\
+0 & 1 & 0 & 0 & -\frac{1}{2} & \frac{3}{2} & 0 & 0\\
+0 & 0 & 1 & 0 & 0 & 0 & 1 & -\frac{1}{2}\\
+0 & 0 & 0 & 1 & 0 & 0 & -2 & \frac{3}{2}
+\end{array}
+\right)
+\]
+Antwoord:\\
+\[
+\begin{pmatrix}
+1 & -2 & 0 & 0\\
+-\frac{1}{2} & \frac{3}{2} & 0 & 0\\
+0 & 0 & 1 & -\frac{1}{2}\\
+0 & 0 & -2 & \frac{3}{2}
 \end{pmatrix}
 \]
 
@@ -949,6 +1211,7 @@ sin(\theta_1+\theta_2) & cos(\theta_1+\theta_2)
 \]
 
 \subsection*{2.17}
+\subsubsection*{a)}
 \[
 \begin{pmatrix}
 1 & 1\\
@@ -977,6 +1240,29 @@ sin(\theta_1+\theta_2) & cos(\theta_1+\theta_2)
 \]
 
 \section*{Hoofdstuk 3}
+\subsection*{3.1}
+\[
+\begin{vmatrix}
+4 & 1\\
+3 & 2
+\end{vmatrix}
+= 5\;
+D1 =
+\begin{vmatrix}
+11 & 1\\
+12 & 2
+\end{vmatrix}
+= 10\;
+D2 =
+\begin{vmatrix}
+4 & 11\\
+3 & 22
+\end{vmatrix}
+=15
+\]
+\[
+x = 2 \;en\; y = 3
+\]
 \subsection*{3.2}
 \subsubsection*{a)}
 \[
@@ -1094,6 +1380,52 @@ x_3=3
 =-2+11+32=41
 \]
 
+\subsubsection*{c)}
+\[
+\begin{vmatrix}
+a & b & c \\
+c & a & b \\
+b & c & a
+\end{vmatrix}
+=
+a.\begin{vmatrix}
+a & b \\
+c & a \\
+\end{vmatrix}
+-c.\begin{vmatrix}
+b & c \\
+c & a \\
+\end{vmatrix}
++b.\begin{vmatrix}
+b & c \\
+a & b \\
+\end{vmatrix}
+=
+a.(a^2-bc) - c.(ab-c^2) + b.(b^2-ac) = a^3+b^3+c^3 +3abc
+\]
+\[
+\begin{vmatrix}
+a & b & c \\
+c & a & b \\
+b & c & a
+\end{vmatrix}
+=
+-b.\begin{vmatrix}
+c & b \\
+b & a \\
+\end{vmatrix}
++a.\begin{vmatrix}
+a & c \\
+b & a \\
+\end{vmatrix}
+-c.\begin{vmatrix}
+a & c \\
+c & b \\
+\end{vmatrix}
+=
+-b.(ac-b^2) + a.(a^2-bc) - c.(ab-c^2) = a^3+b^3+c^3 +3abc
+\]
+
 \subsubsection*{e)}
 \[
 \begin{vmatrix}
@@ -1137,6 +1469,17 @@ x_3=3
 \]
 
 \subsection*{3.6}
+\subsubsection*{b)}
+\[
+\begin{vmatrix}
+3 & 4 & 0 & 0\\
+1 & 2 & 0 & 0\\
+0 & 0 & 3 & 1\\
+0 & 0 & 4 & 2
+\end{vmatrix}
+=3.2.2-1.4.2 = 4
+\]
+
 \subsubsection*{c)}
 \[
 \begin{vmatrix}
@@ -1331,6 +1674,9 @@ x\\y\\z
 \]
 
 \subsection*{4.2}
+\[
+V: \vec{x} = \vec{p_0}+t_1(\vec{p_1}-\vec{p_0}) +t_2(\vec{p_2}-\vec{p_0})
+\]
 \subsubsection*{a)}
 \[
 V:\;\begin{pmatrix}
@@ -1345,6 +1691,23 @@ x\\y\\z
 \end{pmatrix}
 +t2\begin{pmatrix}
 2\\1\\-1
+\end{pmatrix}
+\]
+
+\subsubsection*{b)}
+\[
+V:\;\begin{pmatrix}
+x\\y\\z
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\0\\0
+\end{pmatrix}
++t1\begin{pmatrix}
+-1\\1\\0
+\end{pmatrix}
++t2\begin{pmatrix}
+-1\\0\\1
 \end{pmatrix}
 \]
 
@@ -1429,7 +1792,6 @@ x\\y\\z
 \end{pmatrix}
 \]
 
-\subsection*{4.5}
 \subsubsection*{b)}
 \[
 V:\;-1(x-2)+4(y+1)+5(z-3)=0
@@ -1451,6 +1813,44 @@ x\\y\\z
 +t2\begin{pmatrix}
 -5\\0\\-1
 \end{pmatrix}
+\]
+
+\subsection*{4.6}
+\[
+\begin{vmatrix}
+x & 1 & 1 & 0\\
+y & 0 & 2 & 1\\
+z & 1 & 0 & 3\\
+1 & 1 & 1 & 1
+\end{vmatrix}
+=0
+\]
+\[
+\Leftrightarrow
+x.\begin{vmatrix}
+0 & 2 & 1\\
+1 & 0 & 3\\
+1 & 1 & 1
+\end{vmatrix}
+-y.\begin{vmatrix}
+1 & 1 & 0\\
+1 & 0 & 3\\
+1 & 1 & 1
+\end{vmatrix}
++z.\begin{vmatrix}
+1 & 1 & 0\\
+0 & 2 & 1\\
+1 & 1 & 1
+\end{vmatrix}
+-\begin{vmatrix}
+1 & 1 & 0\\
+0 & 2 & 1\\
+1 & 0 & 3
+\end{vmatrix}
+=0
+\]
+\[
+\Leftrightarrow 5x+y+2z=7
 \]
 
 \subsection*{4.7}
@@ -1559,6 +1959,41 @@ x\\y\\z
 \end{pmatrix}=\begin{pmatrix}
 \frac{136}{13}\\-\frac{15}{13}\\-\frac{60}{13}
 \end{pmatrix}
+\]
+
+\subsection*{4.10}
+\[
+\begin{pmatrix}
+1\\1\\1
+\end{pmatrix}
+\times
+\begin{pmatrix}
+1\\0\\1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\0\\-1
+\end{pmatrix}
+\]
+Is een richtvector van de rechte.
+Dus:
+\[
+L: \begin{pmatrix}
+1\\3\\2
+\end{pmatrix}
++
+t.\begin{pmatrix}
+1\\0\\-1
+\end{pmatrix}
+\]
+Of:\\
+\[
+L: \left\lbrace
+\begin{array}{c c}
+y &= 3\\
+x+z&=3
+\end{array}
+\right.
 \]
 
 \subsection*{4.18}
@@ -3640,6 +4075,15 @@ R=\lim_{k\rightarrow\infty}\frac{\binom{2k}{k}}{\binom{2k+2}{k+1}}
 \frac{1}{4} 
 \]
 
+\subsubsection*{d)}
+\[
+R=\lim_{n\rightarrow\infty}\frac{\frac{1}{n^2}}{\frac{1}{(n-1)^2}}
+=
+R=\lim_{n\rightarrow\infty}\frac{(n-1)^2}{n^2}
+=
+1
+\]
+
 \subsection*{8.2}
 \subsubsection*{d)}
 convergentiestraal:
@@ -3745,19 +4189,109 @@ dus
 \frac{(1+x)x}{(1-x)^3}
 \]
 
+\subsection*{8.10}
+Taylorreeks:
+\[
+\sum_{n=0}^\infty\frac{f(a)^{(n)}}{n!}(x-a)^n
+\]
 
+\subsubsection*{a)}
+\[
+f(x) = \ln(x) \;\; f^{(n)}(x) = (-1)^{(n+1)} \frac{n!}{x^n} \text{ voor } n>0
+\]
+Taylorreeks:
+\[
+\ln(a) + \sum_{n=1}^\infty\frac{(-1)^{(n-1)}}{n}\frac{(x-a)}{a}^n
+\]
 
+\section*{Hoofdstuk 9}
+\subsection*{9.1}
+\[
+\int_{-l}^l\sin\left(\frac{n\pi x}{l}\right)\sin\left(\frac{m\pi x}{l}\right)dx=0
+\]
+\[
+= \frac{1}{2}\int_{-l}^l\cos\left(\frac{n\pi x - m\pi x}{l}\right)dx - \frac{1}{2}\int_{-l}^l\cos\left(\frac{n\pi x + m\pi x}{l}\right)dx
+\]
+\[
+= \frac{1}{2}\left[\frac{l\sin\left(\frac{n\pi-m\pi}{l}x\right]}{ln\pi-m\pi}\right]_{-l}^l
+-
+\frac{1}{2}\left[\frac{l\sin\left(\frac{n\pi+m\pi}{l}x\right]}{ln\pi+m\pi}\right]_{-l}^l
+\]
+\[
+= \frac{1}{2} \left( -\frac{l}{n\pi - m\pi} \left( \sin(n\pi - m\pi)- \sin(m\pi - n\pi) \right) \right)
+\]\[
+-\frac{1}{2} \left( -\frac{l}{n\pi + m\pi} \left( \sin(n\pi + m\pi)- \sin(-(m\pi + n\pi)) \right) \right)
+\]
+\[
+=0
+\]
 
+\subsection*{9.5}
+\subsection*{b)}
+\[
+a_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x)\cos(nx)dx
+\]
+\[
+= \frac{1}{\pi} \int_o^\pi \cos(nx)dx
+\]
+\[
+=\frac{1}{n\pi}\left[\sin(nx)\right]_0^\pi
+\]
+\[
+= \frac{1}{n\pi}(\sin(n\pi)-\sin(0)) = 0
+\]\\
+\[
+b_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x)\sin(nx)dx
+\]
+\[
+= \frac{1}{\pi} \int_0^\pi \sin(nx)dx
+\]
+\[
+= -\frac{1}{n\pi} \left[ \cos(nx) \right]_0^\pi
+\]
+\[
+\frac{1}{n\pi}(\cos(n\pi)-\cos(0))
+\]
+\[
+= \frac{\cos(n\pi)-1}{n\pi}
+\]\\
+\[
+f(x)  = \frac{1}{2} + \frac{2}{\pi} \sum_{n=1}^\infty \frac{1}{2n+1}sin((2n+1)x)
+\]
 
+\subsection*{9.6}
+\[
+\frac{1}{2} + \frac{2}{\pi} \sum_{n=1}^\infty \frac{1}{2n+1}sin((2n+1)x) = \sum_{n=1}^\infty\frac{(-1)^n}{2n+1}
+\]
+\[
+\Longleftrightarrow\; \sin((2n+1)x) = (-1)^n
+\]
+\[
+\Longleftrightarrow\; \left\lbrace \begin{array}{c c}
+\sin((2n+1)x) = 1 \text{ als n even}\\ \sin((2n+1)x) = -1 \text{ als n oneven}
+\end{array}
+\right. \Longleftrightarrow x = \frac{\pi}{2}
+\]\\
+\[
+f(x) = \frac{1}{2} + \frac{2}{\pi} \sum_{n=1}^\infty\frac{(-1)^n}{2n+1}
+\]
+\[
+\sum_{n=1}^\infty\frac{(-1)^n}{2n+1} = (f(\frac{\pi}{2}) - \frac{1}{2})\frac{\pi}{2} = \frac{\pi}{4}
+\]
 
-
-
-
-
-
-
-
-
+\subsection*{9.8}
+\[ b_n =0\]
+\[ a_n = \frac{2\omega}{\pi}\int_{\frac{-\pi}{2\omega}}^{\frac{\pi}{2\omega	}} |\sin(\omega x)|\cos(nx)dx
+\]
+\[
+=\frac{2\omega}{\pi}\int_0^{\frac{\pi}{2\omega	}} \sin(\omega x)\cos(nx)dx
+\]
+\[
+=\frac{4}{\pi(1-4n^2)}
+\]\\
+\[
+f(x) = \frac{2}{\pi} - \frac{4}{\pi}\sum_{n=1}^\infty\frac{\cos(2n\omega x)}{4n^2 -1}
+\]
 
 
 
