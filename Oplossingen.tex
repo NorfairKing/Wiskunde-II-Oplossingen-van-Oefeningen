@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage{amsmath,amssymb,hyperref}
+\usepackage{ulem}
 \title{Oefeningen Wiskunde II 2013, 1e Bach Informtica}
 \author{Syd Kerckhove}
 
@@ -4229,21 +4230,18 @@ $$\lim_{j\rightarrow\infty}\frac{\frac{\ln j}{j ^3}}{\frac{1}{j ^2}} = \lim_{j\r
 $$\sum_{j=1}^\infty \frac{1}{j^2}  \text{  convergeert naar 1}$$
 $$\text{Eig. 7.6.6.:} \sum_{j=1}^\infty \frac{\ln j}{j^3}  \text{  is convergent}$$
 
-
-
 \subsection*{7.18}
 \subsubsection*{a)}
-TODO (er staat een fout in)
+
 \[
 \lim_{k\rightarrow\infty}\frac{\binom{2k+2}{k+1}}{\binom{2k}{k}}
 =
 \lim_{k\rightarrow\infty}\frac{\frac{(2k+2)!}{(k+1)!(k+1)!}}{\frac{(2k)!}{k!k!}}
 = 
-\lim_{k\rightarrow\infty}(k+2)
-=
-\infty
+\lim_{k\rightarrow\infty}\frac{(2k+2)!}{(2k)!(k+1)(k+1)}
 \]
-
+$$ = \lim_{k\rightarrow\infty}\frac{(2(k+1)(2k+1)(2k)!}{(2k)!(k+1)(k+1)}$$
+$$ = \lim_{k\rightarrow\infty}\frac{4k + 2}{k + 1} = 4 > 1 \rightarrow \text{divergent}$$
 \subsubsection*{b)}
 \[
 \lim_{k\rightarrow\infty}\frac{\binom{2k+2}{k+1}^{-1}}{\binom{2k}{k}^{-1}}
