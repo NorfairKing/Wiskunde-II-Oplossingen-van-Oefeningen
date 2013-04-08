@@ -4240,15 +4240,19 @@ $$\text{Eig. 7.6.6.:} \sum_{j=1}^\infty \frac{\ln j}{j^3}  \text{  is convergent
 = 
 \lim_{k\rightarrow\infty}\frac{(2k+2)!}{(2k)!(k+1)(k+1)}
 \]
-$$ = \lim_{k\rightarrow\infty}\frac{(2(k+1)(2k+1)(2k)!}{(2k)!(k+1)(k+1)}$$
+$$ = \lim_{k\rightarrow\infty}\frac{2(k+1)(2k+1)(2k)!}{(2k)!(k+1)(k+1)}$$
 $$ = \lim_{k\rightarrow\infty}\frac{4k + 2}{k + 1} = 4 > 1 \rightarrow \text{divergent}$$
+
 \subsubsection*{b)}
 \[
 \lim_{k\rightarrow\infty}\frac{\binom{2k+2}{k+1}^{-1}}{\binom{2k}{k}^{-1}}
 =
-\lim_{k\rightarrow\infty}\frac{1}{k+2} = 0
+\lim_{k\rightarrow\infty}\frac{\frac{(2k)!}{k!k!}}{\frac{(2k+2)!}{(k+1)!(k+1)!}}
+=
+\lim_{k\rightarrow\infty}\frac{(2k)!(k+1)(k+1)}{(2k+2)!}
 \]
-
+$$= \lim_{k\rightarrow\infty}\frac{(2k)!(k+1)(k+1)}{2(k+1)(2k+1)(2k)!}$$
+$$ = \lim_{k\rightarrow\infty}\frac{k + 1}{4k + 2} = \frac{1}{4} < 1 \rightarrow \text{convergent}$$
 \subsubsection*{c)}
 \[
 \lim_{n\rightarrow\infty}\frac{\frac{(n+1)!}{(n+1)^{n+1}}}{\frac{n!}{n^n}}
