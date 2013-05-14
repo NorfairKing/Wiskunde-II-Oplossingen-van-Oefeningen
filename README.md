@@ -2,6 +2,7 @@ Wiskunde-II-Oplossingen-van-Oefeningen
 ======================================
 
 Hoofdstuk 1 verbeterd.
+Hoofdstuk 2 verbeterd.
 
 De oplossingen van de oefeningen van Wiskunde II 2013
 
